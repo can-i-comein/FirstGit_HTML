@@ -1,0 +1,120 @@
+#ff1{font-family: "궁서체";}
+#ff2{font-family: "굴림체";}
+#ff3{font-family: "고딕체";}
+
+#web-font {
+  font-family: "Exile", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* 글자사이즈 */
+#size{font-size: 30px;}
+
+/* 글자 굵기 */
+#fw1{font-weight: bold;}
+#fw2{font-weight: lighter;}
+#fw3{font-weight: 900;}
+
+#fv{font-variant: small-caps;}
+
+/* 글자 기울임 설정 */
+#fs1{font-style: italic;}
+#fs2{font-style: oblique;}
+
+#f1{font: 30px "궁서체";}
+#f2{font: italic bold 20px "고딕체";}
+
+#c-name{color: red;}
+#c-16{color: #ff0000;}
+#c-rgb{color: rgb(255,0,0);}
+#c-rgba{color: rgba(255,0,0,0.5);}
+
+/* 밑줄없애기 */
+#td1{text-decoration: none;}
+/* 밑줄 만들기 */
+#td2{text-decoration: underline;}
+/* 중간에 줄 긋기 */
+#td3{text-decoration: line-through;}
+/* 위에 줄긋기 */
+#td4{text-decoration: overline;}
+
+#tt1{text-transform: none;}
+#tt2{text-transform: capitalize;}
+#tt3{text-transform: uppercase;}
+#tt4{text-transform: lowercase;}
+
+/* 16. line-height먼저
+    문장끼리의 줄 간격을 조정 */
+#lh1{line-height: normal;}
+#lh2{line-height: 50px;}
+
+/* margin : 외부 여백 */
+/* padding : 내부 여백 */
+#bg{margin: 30px; padding: 50px; background-color: black;}
+.shadow{font-size: 100px; line-height: 30px; font-weight: 900;}
+/*  1.px : 그림자의 가로 위치 조절
+    2.px : 그림자의 세로 위치 조절
+    3.px : 번짐정도 조절*/
+#ts1{color: orangered; text-shadow: 0px 1px 20px #fff;}
+#ts2{color: purple; text-shadow: 5px 5px 10px lightgray;}
+#ts3{color: green; text-shadow: -5px -5px 10px pink;}
+#ts4{text-shadow: 0px 0px 4px #ccc,
+                  0px -5px 4px #ff3,
+                  2px -10px 6px #fd3,
+                  -2px -15px 11px #f80,
+                  2px -19px 18px #f20;}
+
+/* 11.  */
+#space1{white-space: normal;}
+/* nowrap : 한줄로 만들기 */
+#space2{white-space: nowrap;}
+#space3{white-space: pre;}
+#space4{white-space: pre-line;}
+#space5{white-space: pre-wrap;}
+
+/* 12. spacing*/
+/* 한 글자씩 띄어쓰기 */
+#spacing1{letter-spacing: 10px;}
+/* 한 단어씩 띄어쓰기 */
+#spacing2{word-spacing: 10px;}
+
+/* 13. direction */
+#d1{direction: ltr;}
+#d2{direction: rtl;}
+
+/* 14. text-align */
+/* 정렬 */
+#ta1{text-align: left;}
+#ta2{text-align: right;}
+#ta3{text-align: center;}
+#ta4{text-align: justify;}
+
+/* 15. text-ident */
+/* 들여쓰기 */
+ti{text-indent: 100px;}
+
+
+/* 17. text-overflow */
+.overflow-class{background-color: beige; width: 500px;}
+.overflow-class>p{white-space: nowrap; overflow: hidden;}
+#to1{text-overflow: clip;}
+#to2{text-overFlow: ellipsis;}
+
+/* 18. */
+#default-bullet{list-style-type: disc;}
+#circle-bullet{list-style-type: circle;}
+#square-bullet{list-style-type: square;}
+#none-bullet{list-style-type: none;}
+#default-number{list-style-type: decimal;}
+#zero-number{list-style-type: decimal-leading-zero;}
+#lower-rome-number{list-style-type: lower-roman;}
+#upper-rome-number{list-style-type: upper-roman;}
+#lower-alpha{list-style-type: lower-alpha;}
+#upper-alpha{list-style-type: upper-alpha;}
+
+/* 19. list-style-image */
+#image-bullet{list-style-image: url('../sample/image/iconsample.PNG');}
+
+
+

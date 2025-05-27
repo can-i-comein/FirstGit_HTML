@@ -1,0 +1,90 @@
+.size-test{border: 2px solid red;}
+#fixed-size{width: 800px; height: 200px;}
+#variable-size{width: 50%; height: 200px;}
+
+.display{width: 150px; height: 150px; border: 1px solid black;}
+.area1{background-color: red;}
+.area2{background-color: orange;}
+.area3{background-color: yellow;}
+.area4{background-color: green;}
+.area4{background-color: blue;}
+.display-test{display: inline;}
+.display-test3{display: block;}
+.display-test2{display: inline-block;}
+
+.flex-container{
+    background-color: lightsalmon;
+    display: flex;
+
+    justify-content: flex-start;
+    justify-content: flex-end;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around;
+    justify-content: space-evenly;
+
+    align-items: stretch;
+    align-items: flex-start;
+    align-items: flex-end;
+    align-items: center;
+}
+
+/* 한줄로 붙이기는 되지만 문단별로 높이가 맞지 않아 깔끔하지 않음 */
+/* .flex-container>div{display: inline-block;} */
+#flex1{width: 600px; background-color: skyblue;}
+#flex2{width: 200px; background-color: olive;}
+#flex3{width: 400px; background-color: plum;}
+
+#gird1{background-color: darkorange;}
+#gird2{background-color: slateblue;}
+#gird3{background-color: greenyellow;}
+#gird4{background-color: blue;}
+#gird5{background-color: pink;}
+#gird6{background-color: red;}
+#gird7{background-color: cornflowerblue;}
+#gird8{background-color: cyan;}
+#gird9{background-color: sienna;}
+.grid-container{
+    display: grid;
+    grid-template-columns: 200px 200px 500px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+}
+.grid-container>div:nth-child(1){
+    /* grid-column: 1/3;  */
+    /* grid-column-start:1, grid-column-end:3; */
+    grid-column: 1 / span 2;
+    /* grid-row: 1/3; */
+    grid-row: 1/span3;
+}
+
+.border{width: 100px; height: 100px;}
+#border-test1{border-style: none;}
+#border-test2{border-style: hidden; box-shadow: 5px 5px 3px 2px grey;}
+#border-test3{border-style: dotted;}
+#border-test4{border-style: dashed; border-top-color: red;}
+#border-test5{border-style: double; border-color: red;}
+#border-test6{border-style: groove; border-top-left-radius: 50px;}
+#border-test7{border-style: inset; border-bottom-right-radius: 50px;}
+#border-test8{border-style: outset; border-top-right-radius: 50px; border-bottom-left-radius: 50px;}
+#border-test9{border-style: ridge;}
+#border-test10{border-style: solid; border-width: 10px;}
+
+.space{background-color: beige; width: 100px; height: 100px;}
+#padding1{padding: 10px;}
+#padding2{padding-top: 50px; padding-left: 100px;}
+#margin{margin: 50px;}
+#margin2{margin-top: 50px; margin-left: 100px;}
+
+.positioning{border: 1px solid black;}
+.outer{position: relative;}
+#first{width: 300px; height: 300px; background-color: yellow;}
+#second{
+    width: 200px; height: 100px; background-color: yellowgreen;
+    position: absolute; top: 50px; left: 50px;
+}
+#third{width: 100px; height: 100px; background-color: red;
+    position: absolute; top: 100px; left: 100px;
+}
+
+#fixed-area{width: 100px; height: 100px; background-color: blue; position: fixed;}

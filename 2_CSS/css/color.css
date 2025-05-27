@@ -1,0 +1,61 @@
+body{
+    background-color: mediumslateblue;
+}
+/* 1. */
+#div-bg{background-color: white; width: 50%;}
+
+/* 2. background-clip */
+/* 배경 범위를 조절 */
+.clip-test{
+    background-color: white;
+    margin: 30px; padding: 20px;
+    width: 20%; float: left; border: 5px dashed black;
+}
+#clip1{background-color: border-box;}
+#clip2{background-color: padding-box;}
+#clip3{background-color: content-box;}
+
+/* 3. 배경이미지 */
+#bg-img{
+    border: 1px solid black;
+    width: 70%; height: 600px;
+
+    background-image: url(../sample/image/bgsample.PNG);
+
+    background-repeat: repeat;
+    /* 가로반복 */
+    background-repeat: repeat-x;
+    /* 세로반복 */
+    background-repeat: repeat-y;
+    /* 반복x */
+    background-repeat: no-repeat;
+
+    background-size: auto;
+    /* 비율 유지하며 채우기(꽉채우지 않음) */
+    background-size: contain;
+    /* 비율 유지하며 꽉 채우기(짤릴 수 있음) */
+    background-size: cover;
+    background-size: 150px, 100px;
+    background-size: 80%, 80%;
+
+    background-position: left top;
+    background-position: right top;
+    background-position: center top;
+    background-position: left bottom;
+    background-position: right bottom;
+    background-position: center bottom;
+    background-position: left center;
+    background-position: right center;
+    background-position: center center;
+    background-position: 30px 50px;
+    background-position: 50% 50%;
+
+    background-origin: border-box;
+    background-origin: padding-box;
+    background-origin: content-box;
+
+    /* 배경 움직임 */
+    background-attachment: scroll;
+    /* 배경 고정 */
+    background-attachment: fixed;
+}
