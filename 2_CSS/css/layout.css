@@ -88,3 +88,43 @@
 }
 
 #fixed-area{width: 100px; height: 100px; background-color: blue; position: fixed;}
+
+
+.visibility{width: 100px; height: 100px; border: 1px solid black;}
+#v-test1{background-color: brown;}
+#v-test2{background-color: skyblue; visibility: hidden;}
+#v-test3{background-color: olive;}
+
+.z-wrap{width: auto; height: 210; position: relative;}
+.z-test{width: 150px; height: 100px; border: 1px solid black; position: absolute;}
+#z1{background-color: yellow; top: 100px; left: 100px;}
+#z2{background-color: green; top: 50px; left: 50px;}
+#z3{background-color: red; top: 10px; left: 10px;}
+
+.float-test{border: 1px solid black; width: 100px; height: 50px; float: left;}
+
+.column-wrap{border: 1px solid black; height: 300px; overflow: scroll;}
+#column1{column-width: 300px; column-gap: 50px;}
+#column2{column-count: 6; column-rule-style: dashed; column-rule-color: aquamarine;}
+#column2>h5{column-span: all;}
+
+
+table{
+    caption-side: bottom;
+    border: 1px solid black;
+    width: 300px;
+    table-layout: fixed;
+    word-break: break-all;
+    height: 400px;
+    border-collapse: /*collapse*/ separate;
+    border-spacing: 50px, 50px;
+    empty-cells: hide;
+}
+td{
+    border: 1px solid black;
+    width: 80px;
+    text-align: center;
+    height: 100px;
+    vertical-align: top;
+}
+
