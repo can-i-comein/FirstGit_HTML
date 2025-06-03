@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>게시물 보기 - 인스타그램</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fafafa;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      background-color: white;
+      border: 1px solid #dbdbdb;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* 사용자 정보 영역 */
+    .post-header {
+      display: flex;
+      align-items: center;
+      padding: 15px 20px;
+      border-bottom: 1px solid #dbdbdb;
+    }
+
+    .post-header img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .post-header span {
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    /* 게시물 이미지 */
+    .post-image {
+      width: 100%;
+    }
+
+    .post-image img {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+    }
+
+    .post-details {
+      padding: 20px;
+    }
+
+    .post-icons {
+      display: flex;
+      gap: 15px;
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+
+    .post-caption {
+      font-size: 14px;
+      margin-bottom: 20px;
+      color: #262626;
+    }
+
+    .post-caption strong {
+      margin-right: 5px;
+    }
+
+    .comment-input {
+      border-top: 1px solid #dbdbdb;
+      padding-top: 10px;
+      display: flex;
+      gap: 10px;
+    }
+
+    .comment-input input {
+      flex: 1;
+      padding: 10px;
+      border: none;
+      outline: none;
+    }
+
+    .comment-input button {
+      background: none;
+      border: none;
+      color: #3897f0;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- 사용자 프로필 (이미지 위쪽에 위치) -->
+    <div class="post-header">
+      <img src="instagram/KakaoTalk_20250527_140157064.jpg" alt="프로필">
+      <span>h_1nh0_</span>
+    </div>
+
+    <!-- 게시물 이미지 -->
+    <div class="post-image">
+      <img src="instagram/영화.jpg" alt="게시물 이미지">
+    </div>
+
+
+    <!-- 게시물 상세 내용 -->
+    <div class="post-details">
+      <div class="post-icons">
+        <span>❤️</span>
+        <span>💬</span>
+        <span>📤</span>
+      </div>
+
+      <div class="post-caption">
+        <strong>h_1nh0_</strong> 일본영화 띵작! 「나는 내일, 어제의 너와 만난다」 #고마츠나나
+        <h4>고마츠 나나 영화 추천🎬</h4>
+        <ul>
+            <li>사랑은 비가 갠뒤처럼</li>
+            <li>실 : 인연의 시작</li>
+        </ul>
+        <h4>비슷한 영화 추천🎬</h4>
+        <ul>
+            <li>너의 췌장을 먹고싶어</li>
+            <li>지금, 만나러 갑니다</li>
+        </ul>
+      </div>
+
+      <div class="comment-input">
+        <input type="text" placeholder="댓글 달기...">
+        <button>게시</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

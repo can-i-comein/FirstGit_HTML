@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>게시물 보기 - 인스타그램</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fafafa;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      background-color: white;
+      border: 1px solid #dbdbdb;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* 사용자 정보 영역 */
+    .post-header {
+      display: flex;
+      align-items: center;
+      padding: 15px 20px;
+      border-bottom: 1px solid #dbdbdb;
+    }
+
+    .post-header img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .post-header span {
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    /* 게시물 이미지 */
+    .post-image {
+      width: 100%;
+    }
+
+    .post-image img {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+    }
+
+    .post-details {
+      padding: 20px;
+    }
+
+    .post-icons {
+      display: flex;
+      gap: 15px;
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+
+    .post-caption {
+      font-size: 14px;
+      margin-bottom: 20px;
+      color: #262626;
+    }
+
+    .post-caption strong {
+      margin-right: 5px;
+    }
+
+    .comment-input {
+      border-top: 1px solid #dbdbdb;
+      padding-top: 10px;
+      display: flex;
+      gap: 10px;
+    }
+
+    .comment-input input {
+      flex: 1;
+      padding: 10px;
+      border: none;
+      outline: none;
+    }
+
+    .comment-input button {
+      background: none;
+      border: none;
+      color: #3897f0;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- 사용자 프로필 (이미지 위쪽에 위치) -->
+    <div class="post-header">
+      <img src="instagram/KakaoTalk_20250527_140157064.jpg" alt="프로필">
+      <span>h_1nh0_</span>
+    </div>
+
+    <!-- 게시물 이미지 -->
+    <div class="post-image">
+      <img src="instagram/영화2.jpg" alt="게시물 이미지">
+    </div>
+
+
+    <!-- 게시물 상세 내용 -->
+    <div class="post-details">
+      <div class="post-icons">
+        <span>❤️</span>
+        <span>💬</span>
+        <span>📤</span>
+      </div>
+
+      <div class="post-caption">
+        <strong>h_1nh0_</strong> 갬성있는 인생영화 #첫사랑❤️
+        <ul>
+            <li>첫사랑이 생각나는 영화</li>
+            <li>내가 좋아하는 레이첼 맥아담스와 라이언 고슬링의 리즈시절</li>
+            <li>중요한 장면은 아니지만 도로 한복판에 서로 누워있는 장면이 인상깊었음</li>
+            <li>재즈를 하나도 몰랐지만 재즈에도 관심을 가지게 됨</li>
+        </ul>
+        
+      </div>
+
+      <div class="comment-input">
+        <input type="text" placeholder="댓글 달기...">
+        <button>게시</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
