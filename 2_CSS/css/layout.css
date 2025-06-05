@@ -1,28 +1,67 @@
-.size-test{border: 2px solid red;}
-#fixed-size{width: 800px; height: 200px;}
-#variable-size{width: 50%; height: 200px;}
+.size-test {
+    border: 2px solid red;
+}
+#fixed-size {
+    width: 800px;
+    height: 200px;
+}
+#variable-size {
+    width: 50%;
+    height: 200px;
+}
 
-.display{width: 150px; height: 150px; border: 1px solid black;}
-.area1{background-color: red;}
-.area2{background-color: orange;}
-.area3{background-color: yellow;}
-.area4{background-color: green;}
-.area4{background-color: blue;}
-.display-test{display: inline;}
-.display-test3{display: block;}
-.display-test2{display: inline-block;}
+/* 1-1-1. */
+.display {
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+}
+.area1 {
+    background-color: red;
+}
+.area2 {
+    background-color: orange;
+}
+.area3 {
+    background-color: yellow;
+}
+.area4 {
+    background-color: green;
+}
+.area4 {
+    background-color: blue;
+}
+/* 1-2-1. 화면배치 */
+.display-test {
+    display: inline;
+}
+.display-test3 {
+    display: block;
+}
+.display-test2 {
+    display: inline-block;
+}
 
-.flex-container{
+/* flex */
+.flex-container {
     background-color: lightsalmon;
     display: flex;
 
+    /* justify : 가로 정렬 */
+    /* 시작점(왼쪽)으로 정렬 */
     justify-content: flex-start;
+    /* 끝(오른쪽)으로 정렬 */
     justify-content: flex-end;
+    /* 가운데로 정렬 */
     justify-content: center;
+    /* 균일한 간격으로 띄워 정렬 */
     justify-content: space-between;
+    /* 주위 간격을 포함해서 일정하게 정렬 */
     justify-content: space-around;
+    /* 모든 간격을 일정하게 정렬 */
     justify-content: space-evenly;
 
+    /* align : 세로 정렬 */
     align-items: stretch;
     align-items: flex-start;
     align-items: flex-end;
@@ -31,100 +70,155 @@
 
 /* 한줄로 붙이기는 되지만 문단별로 높이가 맞지 않아 깔끔하지 않음 */
 /* .flex-container>div{display: inline-block;} */
-#flex1{width: 600px; background-color: skyblue;}
-#flex2{width: 200px; background-color: olive;}
-#flex3{width: 400px; background-color: plum;}
+#flex1 {
+    width: 600px;
+    background-color: skyblue;
+}
+#flex2 {
+    width: 200px;
+    background-color: olive;
+}
+#flex3 {
+    width: 400px;
+    background-color: plum;
+}
 
-#gird1{background-color: darkorange;}
-#gird2{background-color: slateblue;}
-#gird3{background-color: greenyellow;}
-#gird4{background-color: blue;}
-#gird5{background-color: pink;}
-#gird6{background-color: red;}
-#gird7{background-color: cornflowerblue;}
-#gird8{background-color: cyan;}
-#gird9{background-color: sienna;}
-.grid-container{
+/* grid */
+#grid1 {
+    background-color: darkorange;
+}
+#grid2 {
+    background-color: slateblue;
+}
+#grid3 {
+    background-color: greenyellow;
+}
+#grid4 {
+    background-color: blue;
+}
+#grid5 {
+    background-color: pink;
+}
+#grid6 {
+    background-color: red;
+}
+#grid7 {
+    background-color: cornflowerblue;
+}
+#grid8 {
+    background-color: cyan;
+}
+#grid9 {
+    background-color: sienna;
+}
+.grid-container {
     display: grid;
     grid-template-columns: 200px 200px 500px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-columns: repeat(3, 1fr);
 }
-.grid-container>div:nth-child(1){
+.grid-container > div:nth-child(1) {
     /* grid-column: 1/3;  */
-    /* grid-column-start:1, grid-column-end:3; */
+    /* = grid-column-start:1, grid-column-end:3; */
     grid-column: 1 / span 2;
     /* grid-row: 1/3; */
-    grid-row: 1/span3;
+    grid-row: 1 / span 3;
 }
 
-.border{width: 100px; height: 100px;}
-#border-test1{border-style: none;}
-#border-test2{border-style: hidden; box-shadow: 5px 5px 3px 2px grey;}
-#border-test3{border-style: dotted;}
-#border-test4{border-style: dashed; border-top-color: red;}
-#border-test5{border-style: double; border-color: red;}
-#border-test6{border-style: groove; border-top-left-radius: 50px;}
-#border-test7{border-style: inset; border-bottom-right-radius: 50px;}
-#border-test8{border-style: outset; border-top-right-radius: 50px; border-bottom-left-radius: 50px;}
-#border-test9{border-style: ridge;}
-#border-test10{border-style: solid; border-width: 10px;}
-
-.space{background-color: beige; width: 100px; height: 100px;}
-#padding1{padding: 10px;}
-#padding2{padding-top: 50px; padding-left: 100px;}
-#margin{margin: 50px;}
-#margin2{margin-top: 50px; margin-left: 100px;}
-
-.positioning{border: 1px solid black;}
-.outer{position: relative;}
-#first{width: 300px; height: 300px; background-color: yellow;}
-#second{
-    width: 200px; height: 100px; background-color: yellowgreen;
-    position: absolute; top: 50px; left: 50px;
-}
-#third{width: 100px; height: 100px; background-color: red;
-    position: absolute; top: 100px; left: 100px;
-}
-
-#fixed-area{width: 100px; height: 100px; background-color: blue; position: fixed;}
-
-
-.visibility{width: 100px; height: 100px; border: 1px solid black;}
-#v-test1{background-color: brown;}
-#v-test2{background-color: skyblue; visibility: hidden;}
-#v-test3{background-color: olive;}
-
-.z-wrap{width: auto; height: 210; position: relative;}
-.z-test{width: 150px; height: 100px; border: 1px solid black; position: absolute;}
-#z1{background-color: yellow; top: 100px; left: 100px;}
-#z2{background-color: green; top: 50px; left: 50px;}
-#z3{background-color: red; top: 10px; left: 10px;}
-
-.float-test{border: 1px solid black; width: 100px; height: 50px; float: left;}
-
-.column-wrap{border: 1px solid black; height: 300px; overflow: scroll;}
-#column1{column-width: 300px; column-gap: 50px;}
-#column2{column-count: 6; column-rule-style: dashed; column-rule-color: aquamarine;}
-#column2>h5{column-span: all;}
-
-
-table{
-    caption-side: bottom;
-    border: 1px solid black;
-    width: 300px;
-    table-layout: fixed;
-    word-break: break-all;
-    height: 400px;
-    border-collapse: /*collapse*/ separate;
-    border-spacing: 50px, 50px;
-    empty-cells: hide;
-}
-td{
-    border: 1px solid black;
-    width: 80px;
-    text-align: center;
+.border {
+    width: 100px;
     height: 100px;
-    vertical-align: top;
+}
+#border-test1 {
+    border-style: none;
+}
+#border-test2 {
+    border-style: hidden;
+    box-shadow: 5px 5px 3px 2px grey;
+}
+#border-test3 {
+    border-style: dotted;
+}
+#border-test4 {
+    border-style: dashed;
+    border-top-color: red;
+}
+#border-test5 {
+    border-style: double;
+    border-color: red;
+}
+#border-test6 {
+    border-style: groove;
+    border-top-left-radius: 50px;
+}
+#border-test7 {
+    border-style: inset;
+    border-bottom-right-radius: 50px;
+}
+#border-test8 {
+    border-style: outset;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+#border-test9 {
+    border-style: ridge;
+}
+#border-test10 {
+    border-style: solid;
+    border-width: 10px;
 }
 
+.space {
+    background-color: beige;
+    width: 100px;
+    height: 100px;
+}
+#padding1 {
+    padding: 10px;
+}
+#padding2 {
+    padding-top: 50px;
+    padding-left: 100px;
+}
+#margin {
+    margin: 50px;
+}
+#margin2 {
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+.positioning {
+    border: 1px solid black;
+}
+.outer {
+    position: relative;
+}
+#first {
+    width: 300px;
+    height: 300px;
+    background-color: yellow;
+}
+#second {
+    width: 200px;
+    height: 100px;
+    background-color: yellowgreen;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+#third {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+
+#fixed-area {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: fixed;
+}

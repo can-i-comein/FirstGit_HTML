@@ -1,27 +1,43 @@
-body{
+body {
     background-color: mediumslateblue;
 }
 /* 1. */
-#div-bg{background-color: white; width: 50%;}
+#div-bg {
+    background-color: white;
+    width: 50%;
+}
 
 /* 2. background-clip */
 /* 배경 범위를 조절 */
-.clip-test{
+.clip-test {
     background-color: white;
-    margin: 30px; padding: 20px;
-    width: 20%; float: left; border: 5px dashed black;
+    margin: 30px;
+    padding: 20px;
+    width: 20%;
+    float: left;
+    border: 5px dashed black;
 }
-#clip1{background-color: border-box;}
-#clip2{background-color: padding-box;}
-#clip3{background-color: content-box;}
+/* float : 옆으로 붙이는 속성 */
+/* dashed : 선모양(점선) */
+#clip1 {
+    background-color: border-box;
+}
+#clip2 {
+    background-color: padding-box;
+}
+#clip3 {
+    background-color: content-box;
+}
 
 /* 3. 배경이미지 */
-#bg-img{
+#bg-img {
     border: 1px solid black;
-    width: 70%; height: 600px;
+    width: 70%;
+    height: 600px;
 
     background-image: url(../sample/image/bgsample.PNG);
 
+    /* repeat이 기본값, 사진크기가 작다면 알아서 반복 */
     background-repeat: repeat;
     /* 가로반복 */
     background-repeat: repeat-x;
